@@ -1,0 +1,24 @@
+{
+  "name": "New-Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austin-keith-vigo/New-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/austin-keith-vigo/New-Portfolio/issues"
+  },
+  "homepage": "https://github.com/austin-keith-vigo/New-Portfolio#readme",
+  "dependencies": {
+    "Express": "^3.0.1"
+  }
+}
