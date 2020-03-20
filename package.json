@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/austin-keith-vigo/New-Portfolio/issues"
   },
-  "homepage": "https://github.com/austin-keith-vigo/New-Portfolio#readme"
+  "homepage": "https://github.com/austin-keith-vigo/New-Portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
