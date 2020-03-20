@@ -1,12 +1,13 @@
-const EXPRESS = require('Express');
-var app =  EXPRESS();
+const express = require('express');
+const path = require('path');
+const https = require('https');
 
-app.get('/test', function(req, res) {
-    console.log("Got a get request");
-    res.send({body: "I got this"})
+const app = express();
+
+app.get('/', function (req, res) {
+    res.send('hello world');
 })
 
-// Make the app listen on port 5000
 app.listen(5000, () => {
-    console.log("Starting Server")
-});
+    console.log("Server Started");
+})

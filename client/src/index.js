@@ -9,9 +9,14 @@ import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import reducers from './Reducers';
 
+// React Router IMports
+import { BrowserRouter } from 'react-router-dom';
+
 ReactDOM.render(
     <Provider store={createStore(reducers)}>
-        <App />
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
     </Provider>, 
     document.getElementById('root')
 );
