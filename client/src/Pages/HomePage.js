@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
 
-import { SideNavigationBar } from './../Components';
+// Components
+import { TopNavigationBar } from './../Components';
+
+// React-Bootstrap Components
+import { Container, Col, Row } from 'react-bootstrap';
 
 class HomePage extends Component {
     render() {
         return(
             <div>
-                <SideNavigationBar />
+                <TopNavigationBar />
                 <h1>HomePage</h1>
             </div>
         )

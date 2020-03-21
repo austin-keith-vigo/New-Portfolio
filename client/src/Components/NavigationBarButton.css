@@ -1,0 +1,15 @@
+.link, .link:hover{
+    text-decoration: none;
+}
+
+.linkText{
+    font-size: x-large;
+    color: #FFFFFF;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.linkText:hover{
+    color: rgb(51, 50, 50);
+}

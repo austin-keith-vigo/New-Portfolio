@@ -12,6 +12,9 @@ import reducers from './Reducers';
 // React Router IMports
 import { BrowserRouter } from 'react-router-dom';
 
+// React-Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 ReactDOM.render(
     <Provider store={createStore(reducers)}>
         <BrowserRouter>
