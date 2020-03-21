@@ -11,7 +11,17 @@ class HomePage extends Component {
         return(
             <div>
                 <TopNavigationBar />
-                <h1>HomePage</h1>
+                <Container>
+                    <Row>
+                        <h1>About Me</h1>
+                    </Row>
+                    <Row>
+                        <h1>Projects</h1>
+                    </Row>
+                    <Row>
+                        <h1>Contact Me</h1>
+                    </Row>
+                </Container>
             </div>
         )
     };
