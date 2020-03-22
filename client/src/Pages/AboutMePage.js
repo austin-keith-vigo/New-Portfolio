@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import { TopNavigationBar } from './../Components';
 
 class AboutMePage extends Component {
+    
     constructor(props) {
         super(props);
         fetch('/getAboutMe')

@@ -8,6 +8,11 @@ app.get('/', function (req, res) {
     res.send('hello world');
 })
 
+app.get('/getHomeItems', function(req, res) {
+    console.log("Give home items");
+    res.json({test: "test"});
+})
+
 app.get('/getAboutMe', function (req, res) {
     console.log("Give about me details")
 })

@@ -4,22 +4,30 @@ import React, {Component} from 'react';
 import { TopNavigationBar } from './../Components';
 
 // React-Bootstrap Components
-import { Container, Col, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 class HomePage extends Component {
+
+    constructor(props) {
+        super(props);
+
+        // Make a GET request to backend to grab items for the homepage.
+        fetch('/getHomeItems')
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                console.log(data);
+            });
+    }
+
     render() {
         return(
-            <div>
+            <div> 
                 <TopNavigationBar />
                 <Container>
                     <Row>
                         <h1>About Me</h1>
-                    </Row>
-                    <Row>
-                        <h1>Projects</h1>
-                    </Row>
-                    <Row>
-                        <h1>Contact Me</h1>
                     </Row>
                 </Container>
             </div>
