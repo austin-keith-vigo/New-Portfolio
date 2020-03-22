@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {BLUE} from './../Globals';
 
 // Components
 import { TopNavigationBar } from './../Components';
@@ -21,18 +22,25 @@ class HomePage extends Component {
             });
     }
 
+    styles = {
+        divStyle: {
+            backgroundColor: BLUE
+        }
+    }
+
     render() {
         return(
             <div> 
                 <TopNavigationBar />
-                <Container>
+                <Container fluid>
                     <Row>
-                        <h1>About Me</h1>
+                        <div style={this.styles.divStyle}></div>
                     </Row>
                 </Container>
             </div>
         )
     };
 }
+
 
 export default HomePage;
